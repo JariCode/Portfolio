@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>JariCode</title>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Etusivu</a></li>
+                    <li> <a href="esittely.html">Esittely</a></li>
+                    <li> <a href="projektit.html">Projektit</a></li>
+                    <li><a href="cv.html">CV</a></li>
+                    <li><a href="ota_yhteytta.html">Ota yhteyttä</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="button"><a href="index.html">JARICODE</a></div>
+        <div class="p">Web ohjelmistokehittäjä</div>
+    </header>
+    <div class="section-content">
+        <h1>Projektit</h1>
+        <div class="content-container">
+            <div class="text-section">
+                <p>Täältä pääset seuraamaan projektejani. Voit klikata alla olevista linkeistä.</p>
+            </div>
+    
+            <div class="project-links">
+                <ul>
+                    <li><a href="https://www.freecodecamp.org/certification/fcc39ef1022-8d9c-4f26-9d96-ad4432bda897/responsive-web-design">Responsive Web Design</a></li>
+                    <li><a href="https://github.com/JariCode">GitHub</a></li>
+                </ul>
+            </div>
+    
+            <div class="image-section">
+                <!-- Slideshow alkaa -->
+                <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                  <img src="images/animaatio.png">
+                </div>
+              
+                <div class="mySlides fade">
+                
+                  <img src="/images/grilli.png" >
+                </div>
+              
+                <div class="mySlides fade">
+                  
+                  <img src="/images/road.png">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="images/spiderman.png">
+                </div>
+              </div>
+              <!--Slideshow loppuu-->
+              <img src="/images/freecodecamp.png" alt="freecodecamp">
+            </div>
+        </div>
+
+  <!-- Dotit -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+  </div>
+<!--Dotit loppuu-->
+
+    </div>
+    <div class="footer">&copy; Kaikki oikeudet pidätetään. <a class="footer" href="/index.html">JariCode</a></div>
+    
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        
+        // Lisää automaattinen vaihtaminen
+        setInterval(function() {
+          plusSlides(1); // Siirtyy seuraavaan kuvaan
+        }, 3000); // 3000 millisekuntia = 3 sekuntia
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
+        <!--Slideshow loppuu--> 
+</body>
+</html>

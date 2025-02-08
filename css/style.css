@@ -1,0 +1,1374 @@
+/*Perusasetukset*/
+body {
+    background: linear-gradient(-45deg, #2D0000 75%, #42DBA1 90% 100%);
+    height: 140vh;
+    margin: 0; 
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    color: white;
+}
+/*Perusasetukset loppuu*/
+
+/*Animaatiot alkaa*/
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes reveal {
+    0% {
+        opacity: 0;
+    }
+    30% {
+        opacity: 0;
+        transform: rotate3d(-285, 85, 30, 90deg);
+    }
+    45% {
+        opacity: 1;
+        transform: none;
+    }
+    90% {
+        opacity: 1;
+        transform: none;
+    }
+}
+/*Animaatiot loppuu*/
+
+/* Navi alkaa*/
+header nav ul {
+    list-style-type: none; 
+    font-size: 18px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+header nav li {
+    margin-bottom: 5px;
+}
+
+header nav {
+    float: right;
+    margin-right: 75px;
+    margin-top: 35px;
+}
+
+header nav ul li a:hover {
+    color: #42DBA1;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+/*Navi loppuu*/
+
+/*Header nappi alkaa*/
+.button {
+    border: 2px solid white;
+    border-radius: 6%;
+    color: aliceblue;
+    background-color: #336080;
+    padding: 12px 22px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 35px;
+    margin-left: 75px;
+}
+
+.button a {
+    text-decoration: none;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.button a:hover {
+    color: #42DBA1
+}
+
+.p {
+    color: white;
+    font-size: 16px;
+    margin-left:70px;
+    margin-top: 10px;
+}
+/*Headerin nappi loppuu*/
+
+/*Otsikko alkaa*/
+h1 {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 38px;
+    text-align: center;
+    margin-top: 95px;
+   
+}
+/*Otsikko loppuu*/
+
+/*Etusivun teksti alkaa*/
+
+.section-normal-p {
+    text-align: center;
+    animation: fadeIn 5s ease-in-out;
+}
+
+/*Etusivun teksti loppuu/*
+
+/*Etusivun video*/
+video {
+    display: block;
+    border-radius: 5%;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    animation: fadeIn 5s ease-in-out;
+}
+/*Video loppuu*/
+
+/*Rekrytoi painike alkaa*/
+.button-container {
+    display: flex;
+    justify-content: center; 
+    margin-top: 10px;
+    animation: fadeIn 4s ease-in-out;
+}
+
+.secondButton {
+    border: 2px solid white;
+    border-radius: 6%;
+    background-color: #336080;
+    padding: 12px 22px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.secondButton a {
+    text-decoration: none;
+    color: aliceblue;
+}
+.secondButton a:hover {
+    color: #42DBA1;
+}
+/*Rekrytoi painike loppuu*/
+
+/*Footer alkaa*/
+.footer {
+    text-align: center;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    margin-top: 35px;
+}
+
+.footer a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer a:hover {
+    color: #42DBA1;
+}
+/*Footer loppuu*/
+
+/*Lomake alkaa*/
+form {
+    max-width: 450px;
+    max-height: 350px;
+    margin-left: 250px;
+}
+
+label {
+    display: block; 
+    margin-bottom: 10px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+input, textarea, button {
+    width: 100%; 
+    padding: 15px;
+    margin-bottom: 20px; 
+    border: 2px solid white;
+    border-radius: 4px;
+    background-color: #336080;
+    color: white;
+}
+
+input textarea:hover {
+    background-color: #336080;
+    color: white;
+}
+
+textarea {
+    resize: vertical; 
+   
+}
+
+button {
+    background-color: #336080;
+    color: white;
+    border: 2px solid white;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    width: 108%;
+}
+
+button:hover {
+    background-color: white;
+    color: #336080;
+    font-weight: bold;
+    border: 2px solid #336080;
+}
+/*Lomake loppuu*/
+
+/*Ota yhteyttä sivun kuva ja sen tausta ja teksti*/
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
+}
+
+.info-section {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.info-section p {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.section-normal {
+    background-color: #336080;
+    padding: 15px;
+    border-radius: 5%;
+    width: 450px;
+}
+.section-normal img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5%;
+}
+
+
+/*Ota yhteyttä sivun kuva ja sen tausta ja teksti loppuu*/
+
+/*Ikonit alkaa*/
+
+.icons {
+    font-size: 25px;
+}
+
+.icons a {
+    margin-right: 10px;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.fa {
+    padding: 25px;
+    margin-right: 10px;
+    width: 30px;
+    height: auto;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    background-color: #336080;
+    color: white;
+  }
+
+  .fa:hover {
+    color: #42DBA1;
+  }
+/*Ikonit loppuu*/
+
+/*Esittely sivun teksti ja kuva alkaa*/
+.section-wide {
+    background-color: #336080;
+    border-radius: 5%;
+    max-width: 800px;
+    padding: 15px;
+    margin-top: 35px;
+    text-align: left;
+    margin-left: auto;  
+    margin-right: auto; 
+    animation: reveal 3s ease-in;
+}
+
+.container {
+    display: flex;
+    justify-content: center;  
+    align-items: center;             
+}
+
+.section-wide img {
+    width: auto;
+    height: 270px;
+    border-radius: 5%;
+    display: block;   
+    margin: 0 auto;
+}
+/*Esittely sivun teksti ja kuva loppuu*/
+
+/*Projektit sivu alkaa*/
+.content-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.text-section {
+    background-color: #336080;
+    border-radius: 5%;
+    padding: 15px;
+    margin-left: 200px;
+    max-width: 300px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.text-section p {
+    font-size: 18px;
+}
+
+.image-section {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 0;
+    margin-right: 75px;
+}
+
+.image-section img {
+    max-width: 100%;
+    width: 450px;
+    height: auto;
+    border-radius: 5%;
+    background-color: #336080;
+    margin: 15px;
+    padding: 15px;
+}
+
+
+.project-links {
+    position: absolute;
+    margin-left: 160px;
+}
+
+.project-links ul {
+    list-style-type: none;
+    padding-top: 200px;
+}
+
+.project-links li {
+    margin-bottom: 15px;
+}
+
+.project-links a {
+    color:white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.project-links a:hover {
+    color: #42DBA1;
+}
+/*Projektit sivu loppuu*/
+
+/*Cv sivu alkaa*/
+.section-content-cv {
+    display: block;
+    text-align: center; 
+}
+
+.text-section-cv {
+    background-color: #336080; 
+    padding: 10px;
+    margin-bottom: 5px;
+    text-align: center;
+    background-color: #336080;
+    border-radius: 5%;
+    max-width: 300px;
+    text-align: center;
+    margin-top: 35px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.link-section-cv ul {
+    list-style-type: none;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+.link-section-cv li {
+    margin-bottom: 15px;
+}
+
+.link-section-cv a {
+    color:white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.link-section-cv a:hover {
+    color: #42DBA1;
+}
+
+.image-section-cv img {
+    max-width: 100%;
+    width: 450px;
+    height: auto;
+    border-radius: 5%;
+    background-color: #336080;
+    margin: 5px;
+    padding: 15px;
+}
+/*CV sivu loppuu*/
+
+/*Media screenit alkaa*/
+@media only screen and (max-width: 1300px) {
+ /*Lomake alkaa*/
+form {
+    max-width: 350px;
+    max-height: 350px;
+    margin-left: 50px;
+}
+
+label {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+input, textarea, button {
+    width: 100%; 
+    padding: 15px;
+    margin-bottom: 20px; 
+}
+
+
+button {
+    font-size: 18px;
+    width: 108%;
+}
+
+/*Lomake loppuu*/
+/*Ota yhteyttä sivun kuva ja sen tausta ja teksti*/
+.contact-container {
+    padding: 5px;
+}
+
+.info-section {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.section-normal {
+    background-color: #336080;
+    padding: 15px;
+    border-radius: 5%;
+    width: 350px;
+    margin-top: 55px;
+}
+.section-normal img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5%;
+}
+
+
+/*Ota yhteyttä sivun kuva ja sen tausta ja teksti loppuu*/
+} 
+@media only screen and (max-width: 1000px) {
+    /*Lomake alkaa*/
+   form {
+       max-width: 250px;
+       max-height: 350px;
+       margin-left: 20px;
+   }
+   
+   label {
+       margin-bottom: 10px;
+       font-size: 18px;
+   }
+   
+   input, textarea, button {
+       width: 100%; 
+       padding: 15px;
+       margin-bottom: 10px; 
+   }
+   
+   
+   button {
+       font-size: 18px;
+       width: 108%;
+   }
+   
+   /*Lomake loppuu*/
+   /*Ota yhteyttä sivun kuva ja sen tausta ja teksti*/
+   .contact-container {
+       padding: 5px;
+   }
+   
+   .info-section {
+       width: 60%;
+       display: flex;
+       flex-direction: column;
+       gap: 15px;
+   }
+   
+   .section-normal {
+       background-color: #336080;
+       padding: 15px;
+       border-radius: 5%;
+       width: 300px;
+       margin-top: 55px;
+   }
+   .section-normal img {
+       max-width: 100%;
+       height: auto;
+       border-radius: 5%;
+   }
+   /*Ota yhteyttä sivun kuva ja sen tausta ja teksti loppuu*/
+   /*Projektit sivu alkaa*/
+.text-section {
+    padding: 15px;
+    margin-left: 50px;
+    max-width: 200px;
+    margin-top: 45px;
+}
+
+.text-section p {
+    font-size: 18px;
+}
+
+
+.project-links {
+    position: absolute;
+    margin-left: 20px;
+}
+
+.project-links ul {
+    padding-top: 200px;
+}
+
+.project-links li {
+    margin-bottom: 15px;
+}
+
+.project-links a {
+    font-size: 18px;
+   
+}
+
+
+/*Projektit sivu loppuu*/
+   }
+   @media only screen and (max-width: 750px) {
+    /*Lomake alkaa*/
+   form {
+       max-width: 200px;
+       max-height: 350px;
+       margin-left: 20px;
+   }
+   
+   label {
+       margin-bottom: 10px;
+       font-size: 16px;
+   }
+   
+   input, textarea, button {
+       width: 100%; 
+       padding: 10px;
+       margin-bottom: 10px; 
+   }
+   
+   button {
+       font-size: 18px;
+       width: 108%;
+   }
+   
+   /*Lomake loppuu*/
+   /*Ota yhteyttä sivun kuva ja sen tausta ja teksti*/
+   .contact-container {
+       padding: 5px;
+   }
+   
+   .info-section {
+       width: 55%;
+       display: flex;
+       flex-direction: column;
+       gap: 15px;
+   }
+   
+   .section-normal {
+       background-color: #336080;
+       padding: 15px;
+       border-radius: 5%;
+       width: 250px;
+       margin-top: 25px;
+   }
+   .section-normal img {
+       max-width: 100%;
+       height: auto;
+       border-radius: 5%;
+   }
+   /*Ota yhteyttä sivun kuva ja sen tausta ja teksti loppuu*/
+    /*Ikonit alkaa*/
+
+.icons {
+    font-size: 10px;
+}
+
+.icons a {
+    margin-right: 5px;
+    font-size: 20px;
+}
+
+.fa {
+    padding: 15px;
+    margin-right: 8px;
+    width: 25px;
+    height: auto;
+  }
+
+/*Ikonit loppuu*/
+/* Navi alkaa*/
+header nav ul {
+    font-size: 16px;
+}
+
+header nav li {
+    margin-bottom: 5px;
+}
+
+header nav {
+    margin-right: 15px;
+    margin-top: 15px;
+}
+/*Navi loppuu*/
+
+/*Header nappi alkaa*/
+.button {
+    padding: 8px 15px;
+    font-size: 16px;
+    margin-top: 25px;
+    margin-left: 35px;
+}
+
+.p {
+    font-size: 16px;
+    margin-left:35px;
+    margin-top: 10px;
+}
+/*Headerin nappi loppuu*/
+
+/*Otsikko alkaa*/
+h1 {
+    font-size: 30px;
+    margin-top: 75px;
+   
+}
+/*Otsikko loppuu*/
+
+/*Etusivun video*/
+video {
+    max-width: 500px;
+}
+/*Video loppuu*/
+
+/*Rekrytoi painike alkaa*/
+.secondButton {
+    padding: 8px 15px;
+    font-size: 16px;
+}
+
+/*Rekrytoi painike loppuu*/
+/*Esittely sivun teksti ja kuva alkaa*/
+.section-wide {
+    max-width: 300px;
+    padding: 15px;
+    margin-top: 35px;
+    
+}
+
+.section-wide img {
+    width: auto;
+    height: 170px;
+    border-radius: 5%;
+    display: block;   
+    margin: 0 auto;
+}
+/*Esittely sivun teksti ja kuva loppuu*/
+}
+@media only screen and (max-width: 560px) {
+    /*Lomake alkaa*/
+   form {
+       max-width: 150px;
+       max-height: 350px;
+       margin-left: 10px;
+   }
+   
+   label {
+       margin-bottom: 5px;
+       font-size: 14px;
+   }
+   
+   input, textarea, button {
+       width: 100%; 
+       padding: 5px;
+       margin-bottom: 10px; 
+   }
+   
+   
+   button {
+       font-size: 14px;
+       width: 108%;
+   }
+   
+   /*Lomake loppuu*/
+   /*Ota yhteyttä sivun kuva ja sen tausta ja teksti*/
+   .contact-container {
+       padding: 5px;
+   }
+   
+   .info-section {
+       width: 45%;
+       display: flex;
+       flex-direction: column;
+       gap: 15px;
+   }
+   
+   .section-normal {
+       padding: 10px;
+       border-radius: 5%;
+       width: 150px;
+       margin-top: 15px;
+   }
+   .section-normal img {
+       max-width: 100%;
+       height: auto;
+       border-radius: 5%;
+   }
+
+   .info-section p {
+    font-size: 14px;
+   }
+   /*Ota yhteyttä sivun kuva ja sen tausta ja teksti loppuu*/
+    /*Ikonit alkaa*/
+
+.icons {
+    font-size: 10px;
+}
+
+.icons a {
+    margin-right: 5px;
+    font-size: 15px;
+}
+
+.fa {
+    padding: 8px;
+    margin-right: 5px;
+    width: 15px;
+    height: auto;
+  }
+
+/*Ikonit loppuu*/
+/* Navi alkaa*/
+header nav ul {
+    font-size: 14px;
+}
+
+header nav li {
+    margin-bottom: 5px;
+}
+
+header nav {
+    margin-right: 10px;
+    margin-top: 10px;
+}
+/*Navi loppuu*/
+
+/*Header nappi alkaa*/
+.button {
+    padding: 8px 15px;
+    font-size: 14px;
+    margin-top: 25px;
+    margin-left: 35px;
+}
+
+.p {
+    font-size: 14px;
+    margin-left:35px;
+    margin-top: 10px;
+}
+/*Headerin nappi loppuu*/
+
+/*Otsikko alkaa*/
+h1 {
+    font-size: 25px;
+    margin-top: 55px;
+   
+}
+/*Otsikko loppuu*/
+
+/*Etusivun video*/
+video {
+    max-width: 400px;
+}
+/*Video loppuu*/
+
+/*Rekrytoi painike alkaa*/
+.secondButton {
+    padding: 8px 15px;
+    font-size: 14px;
+}
+
+/*Rekrytoi painike loppuu*/
+/*Esittely sivun teksti ja kuva alkaa*/
+.section-wide {
+    max-width: 300px;
+    padding: 15px;
+    margin-top: 35px;
+    
+}
+
+.section-wide img {
+    width: auto;
+    height: 170px;
+    border-radius: 5%;
+    display: block;   
+    margin: 0 auto;
+}
+/*Esittely sivun teksti ja kuva loppuu*/
+/*Projektit sivu alkaa*/
+.text-section {
+    padding: 15px;
+    margin-left: 10px;
+    max-width: 200px;
+    margin-top: 45px;
+}
+
+.text-section p {
+    font-size: 16px;
+}
+
+.project-links {
+    position: absolute;
+    margin-left: 1px;
+}
+
+.project-links ul {
+    padding-top: 170px;
+}
+
+.project-links a {
+    font-size: 16px;
+   
+}
+/*Projektit sivu loppuu*/
+/*Cv sivu alkaa*/
+.image-section-cv img {
+    max-width: 50%;
+    width: 450px;
+    height: auto;
+    margin: 5px;
+    padding: 15px;
+}
+/*CV sivu loppuu*/
+}
+@media only screen and (max-width: 400px) {
+    /*Lomake alkaa*/
+   form {
+       max-width: 150px;
+       max-height: 350px;
+       margin-left: 5px;
+   }
+   
+   label {
+       margin-bottom: 5px;
+       font-size: 14px;
+   }
+   
+   input, textarea, button {
+       width: 100%; 
+       padding: 5px;
+       margin-bottom: 5px; 
+   }
+   
+   button {
+       font-size: 14px;
+       width: 108%;
+   }
+   
+   /*Lomake loppuu*/
+   /*Ota yhteyttä sivun kuva ja sen tausta ja teksti*/
+   .contact-container {
+       padding: 3px;
+   }
+   
+   .info-section {
+       width: 50%;
+       margin-top: 20px;
+   }
+   
+   .section-normal {
+       padding: 5px;
+       border-radius: 5%;
+       width: 100px;
+       margin-top: 15px;
+   }
+   .section-normal img {
+       max-width: 100%;
+       height: auto;
+       border-radius: 5%;
+   }
+
+   .info-section p {
+    font-size: 14px;
+   }
+   /*Ota yhteyttä sivun kuva ja sen tausta ja teksti loppuu*/
+    /*Ikonit alkaa*/
+
+.icons {
+    font-size: 10px;
+}
+
+.icons a {
+    margin-right: 5px;
+    font-size: 10px;
+}
+
+.fa {
+    padding: 8px;
+    margin-right: 5px;
+    width: 10px;
+    height: auto;
+  }
+
+/*Ikonit loppuu*/
+/* Navi alkaa*/
+header nav ul {
+    font-size: 14px;
+}
+
+header nav li {
+    margin-bottom: 5px;
+}
+
+header nav {
+    margin-right: 10px;
+    margin-top: 10px;
+}
+/*Navi loppuu*/
+
+/*Header nappi alkaa*/
+.button {
+    padding: 8px 15px;
+    font-size: 14px;
+    margin-top: 20px;
+    margin-left: 35px;
+}
+
+.p {
+    font-size: 14px;
+    margin-left:35px;
+    margin-top: 10px;
+}
+/*Headerin nappi loppuu*/
+
+/*Otsikko alkaa*/
+h1 {
+    font-size: 20px;
+    margin-top: 65px;
+   
+}
+/*Otsikko loppuu*/
+
+/*Etusivun video*/
+video {
+    max-width: 300px;
+}
+/*Video loppuu*/
+
+/*Rekrytoi painike alkaa*/
+.secondButton {
+    padding: 8px 15px;
+    font-size: 14px;
+}
+
+/*Rekrytoi painike loppuu*/
+/*Esittely sivun teksti ja kuva alkaa*/
+.section-wide {
+    max-width: 200px;
+    padding: 15px;
+    margin-top: 35px;
+    
+}
+
+.section-wide img {
+    width: auto;
+    height: 150px;
+    border-radius: 5%;
+    display: block;   
+    margin: 0 auto;
+}
+/*Esittely sivun teksti ja kuva loppuu*/
+/*Projektit sivu alkaa*/
+.text-section {
+    padding: 5px;
+    margin-left: 40px;
+    max-width: 100px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.text-section p {
+    font-size: 14px;
+}
+
+.project-links li {
+    margin-bottom: 10px;
+}
+
+.project-links a {
+    font-size: 14px;
+    font-weight: bold;
+}
+.image-section {
+    max-width: 100px;
+    margin-top: 0;;
+}
+/*Projektit sivu loppuu*/
+/*Cv sivu alkaa*/
+.section-content-cv {
+    display: block;
+    text-align: center; 
+}
+
+.text-section-cv {
+    padding: 10px;
+    margin-bottom: 5px;
+    text-align: center;
+    border-radius: 5%;
+    max-width: 45%;
+    text-align: center;
+    margin-top: 35px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.link-section-cv ul {
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+.link-section-cv li {
+    margin-bottom: 15px;
+}
+
+.link-section-cv a {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+.image-section-cv img {
+    max-width: 60%;
+    width: 450px;
+    height: auto;
+    margin: 5px;
+    padding: 15px;
+}
+/*CV sivu loppuu*/
+}
+
+@media only screen and (max-width: 300px) {
+    body {
+        height: 150vh;
+    }
+    /*Lomake alkaa*/
+   form {
+       max-width: 150px;
+       max-height: 350px;
+       margin-left: 5px;
+   }
+   
+   label {
+       margin-bottom: 5px;
+       font-size: 12px;
+   }
+   
+   input, textarea, button {
+       width: 90%; 
+       padding: 3px;
+       margin-bottom: 3px; 
+   }
+   
+   button {
+       font-size: 14px;
+       width: 100%;
+   }
+   
+   /*Lomake loppuu*/
+   /*Ota yhteyttä sivun kuva ja sen tausta ja teksti*/
+   .contact-container {
+       padding: 3px;
+   }
+   
+   .info-section {
+       width: 60%;
+       margin-top: 20px;
+   }
+   
+   .section-normal {
+       padding: 5px;
+       border-radius: 5%;
+       width: 80px;
+       margin-top: 10px;
+   }
+   .section-normal img {
+       max-width: 100%;
+       height: auto;
+       border-radius: 5%;
+   }
+
+   .info-section p {
+    font-size: 12px;
+   }
+   /*Ota yhteyttä sivun kuva ja sen tausta ja teksti loppuu*/
+    /*Ikonit alkaa*/
+
+.icons {
+    font-size: 8px;
+}
+
+.icons a {
+    margin-right: 5px;
+    font-size: 8px;
+}
+
+.fa {
+    padding: 8px;
+    margin-right: 1px;
+    width: 8px;
+    height: auto;
+  }
+
+/*Ikonit loppuu*/
+/* Navi alkaa*/
+header nav ul {
+    font-size: 12px;
+}
+
+header nav li {
+    margin-bottom: 5px;
+}
+
+header nav {
+    margin-right: 5px;
+    margin-top: 5px;
+}
+/*Navi loppuu*/
+
+/*Header nappi alkaa*/
+.button {
+    padding: 8px 15px;
+    font-size: 12px;
+    margin-top: 10px;
+    margin-left: 25px;
+}
+
+.p {
+    font-size: 12px;
+    margin-left:25px;
+    margin-top: 5px;
+}
+/*Headerin nappi loppuu*/
+
+/*Otsikko alkaa*/
+h1 {
+    font-size: 15px;
+    margin-top: 45px;
+   
+}
+/*Otsikko loppuu*/
+
+/*Etusivun video*/
+video {
+    max-width: 200px;
+}
+/*Video loppuu*/
+
+/*Rekrytoi painike alkaa*/
+.secondButton {
+    padding: 5px 10px;
+    font-size: 12px;
+}
+/*Rekrytoi painike loppuu*/
+/*Footer alkaa*/
+.footer {
+    font-size: 12px;
+}
+/*Footer loppuu/*
+/*Esittely sivun teksti ja kuva alkaa*/
+.section-wide {
+    max-width: 150px;
+    padding: 10px;
+    margin-top: 25px;
+}
+
+.section-wide img {
+    width: auto;
+    height: 130px;
+    border-radius: 5%;
+    display: block;   
+    margin: 0 auto;
+}
+/*Esittely sivun teksti ja kuva loppuu*/
+/*Projektit sivu alkaa*/
+.text-section {
+    padding: 5px;
+    margin-left: 30px;
+    max-width: 80px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.text-section p {
+    font-size: 12px;
+}
+
+.project-links {
+    margin-top: 10px;
+    margin-right: 100px;
+}
+
+.project-links a {
+    font-size: 12px;
+    font-weight: bold;
+}
+.image-section {
+    max-width: 40px;
+    margin-top: 0;
+}
+/*Projektit sivu loppuu*/
+/*Cv sivu alkaa*/
+.section-content-cv {
+    display: block;
+    text-align: center; 
+}
+
+.text-section-cv {
+    padding: 10px;
+    margin-bottom: 5px;
+    text-align: center;
+    border-radius: 5%;
+    max-width: 45%;
+    text-align: center;
+    margin-top: 35px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.link-section-cv ul {
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+.link-section-cv li {
+    margin-bottom: 15px;
+}
+
+.link-section-cv a {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+.image-section-cv img {
+    max-width: 60%;
+    width: 450px;
+    height: auto;
+    margin: 5px;
+    padding: 15px;
+}
+/*CV sivu loppuu*/
+}
+/*Media screenit loppuu*/
+
+/* Projektisivun Slideshow alkaa*/
+.slideshow-container {
+    max-width: 800px;
+    position: relative;
+    margin-top: 40px;
+    
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  .mySlides img {
+      width: 450px;
+      height: auto;
+      max-width: 100%;
+      border-radius: 3%;
+  }
+  
+  /* Dots alkaa */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  /*Dots loppuu*/
+  
+  /* Slideshow fading animation alkaa */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  /*Slideshow fade animaatio loppuu*/
