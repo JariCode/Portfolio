@@ -394,6 +394,11 @@ button:hover {
 .project-links a:hover {
     color: #42DBA1;
 }
+
+.dot {
+    visibility: hidden;
+    display: none;
+}
 /*Projektit sivu loppuu*/
 
 /*Cv sivu alkaa*/
