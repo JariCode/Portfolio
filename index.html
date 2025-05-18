@@ -30,6 +30,12 @@
     <div class="button-container">
         <div class="secondButton"><a href="mailto:jaricode@elisanet.fi">Rekrytoi painike</a></div>
     </div>
-    <div class="footer">&copy; Kaikki oikeudet pidätetään. <a class="footer" href="/index.html">JariCode</a></div>   
+    <div class="footer">&copy; Kaikki oikeudet pidätetään. <a class="footer" href="/index.html">JariCode</a></div>
+ <script>//Toistaa videon myös Safari selaimessa
+document.addEventListener("DOMContentLoaded", () => {
+    var video = document.getElementById("video");
+    video.play().catch(error => console.log("Autoplay estetty:", error));
+});
+</script>
 </body>
 </html>

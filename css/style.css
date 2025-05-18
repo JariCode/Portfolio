@@ -886,10 +886,11 @@ video {
 .project-links {
     position: absolute;
     margin-left: 1px;
+    margin-top: 0px;
 }
 
 .project-links ul {
-    padding-top: 170px;
+    padding-top: 160px;
 }
 
 .project-links a {
@@ -907,7 +908,14 @@ video {
 }
 /*CV sivu loppuu*/
 }
+
+.footer {
+    margin-top: 60px;
+}
 @media only screen and (max-width: 400px) {
+  body {
+        height: 150vh;
+    }
     /*Lomake alkaa*/
    form {
        max-width: 150px;
@@ -1066,7 +1074,7 @@ video {
     font-weight: bold;
 }
 .image-section {
-    max-width: 100px;
+    max-width: 95px;
     margin-top: 0;;
 }
 /*Projektit sivu loppuu*/
@@ -1240,6 +1248,7 @@ video {
 /*Footer alkaa*/
 .footer {
     font-size: 12px;
+    margin-top: 70px;
 }
 /*Footer loppuu/*
 /*Esittely sivun teksti ja kuva alkaa*/
@@ -1271,16 +1280,17 @@ video {
 }
 
 .project-links {
-    margin-top: 10px;
+    margin-top: 20px;
     margin-right: 100px;
 }
 
 .project-links a {
     font-size: 12px;
     font-weight: bold;
+    
 }
 .image-section {
-    max-width: 40px;
+    max-width: 70px;
     margin-top: 0;
 }
 /*Projektit sivu loppuu*/
